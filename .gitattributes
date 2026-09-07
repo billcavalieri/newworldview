@@ -1,0 +1,5 @@
+# ROM images must never be treated as text or merged.
+*.rom binary
+*.ROM binary
+*.tbxi binary
+Mac OS ROM binary

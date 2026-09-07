@@ -1,0 +1,14 @@
+{
+  "originHash" : "8bcd32c14c6a80f398f72816829071ecc731f5a71f5bbaa79d303d156e17cd8a",
+  "pins" : [
+    {
+      "identity" : "libcapstone-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/libcapstone-spm.git",
+      "state" : {
+        "revision" : "dcf8f40adcfce8720f817ebbe35f49938db42bfd"
+      }
+    }
+  ],
+  "version" : 3
+}

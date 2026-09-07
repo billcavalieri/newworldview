@@ -1,0 +1,22 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+
+# ROM files — never commit
+*.ROM
+*.rom
+*.tbxi
+Mac OS ROM
+**/Mac OS ROM
+Downloads/
