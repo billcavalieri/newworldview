@@ -27,7 +27,7 @@ swift test
 xcodebuild -project App/NewWorldView.xcodeproj -scheme NewWorldView -configuration Debug build
 ```
 
-The parser library is a Swift package (`NewWorldROM`) that the app links against. Disassembly uses [Capstone](https://github.com/Lakr233/libcapstone-spm). After a ROM opens, the app builds a static **analysis database** (functions, 68k A-traps, call/jump xrefs) using the SheepShaver map of 4 MB MacROM at `0x50000000`. Use **Export Ghidra** to write `analysis.json`, `analysis.xml`, and `LoadNewWorldROM.py` — ROM bytes are never exported. In Ghidra, map your local MacROM at `0x50000000` (and/or 68k Toolbox at `0x00000000`), then run the load script.
+The parser library is a Swift package (`NewWorldROM`) that the app links against. Disassembly uses [Capstone](https://github.com/Lakr233/libcapstone-spm). After a ROM opens, the app builds a static **analysis database** (functions, 68k A-traps, call/jump xrefs) using the SheepShaver map of 4 MB MacROM at `0x50000000`. Use **Export Ghidra** to write `analysis.json`, `analysis.xml`, and `LoadNewWorldROM.py`; ROM bytes are never exported. In Ghidra, map your local MacROM at `0x50000000` (and/or 68k Toolbox at `0x00000000`), then run the load script.
 
 ## Optional parity check
 
@@ -46,9 +46,9 @@ TBXI_ROM_PATH="$HOME/Downloads/Mac OS ROM" swift test
 
 ## Credits
 
-- [elliotnunn/tbxi](https://github.com/elliotnunn/tbxi) — ROM layout and dump model
-- Apple Technote 1167 — NewWorld ROM architecture
-- Capstone — PowerPC and 68k disassembly
+- [elliotnunn/tbxi](https://github.com/elliotnunn/tbxi): ROM layout and dump model
+- Apple Technote 1167: NewWorld ROM architecture
+- Capstone: PowerPC and 68k disassembly
 
 ## Mill analysis handoff (macemu)
 
